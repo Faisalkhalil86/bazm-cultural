@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import bgImage from "../assets/hero-bg.jpeg";
+import bgImage from "../assets/herobackground.jpeg";
 import logo from "../assets/logo.png";
 
 const HeroSection = () => {
@@ -67,7 +67,7 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg transition-all duration-700 ease-in-out">
+        <h1 className="text-4xl md:text-6xl  font-bold leading-tight drop-shadow-lg transition-all duration-700 ease-in-out">
           {headings[currentIndex].main} <br />
           <span className="text-5xl md:text-7xl font-extrabold text-orange-400">
             {headings[currentIndex].sub}

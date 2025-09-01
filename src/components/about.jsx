@@ -1,4 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: -10 },
+};
+
+const scaleIn = {
+  hidden: { opacity: 1, scale: 1 },
+  visible: { opacity: 1, scale: 1.05 },
+};
 
 const AboutSection = () => {
   return (
@@ -28,10 +39,12 @@ const AboutSection = () => {
           </div>
           {/* Image */}
           <div>
-            <img
-              src="src/assets/program.jpeg"
+            <motion.img
+              src="src/assets/program.webp"
               alt="Program"
-              className="w-full h-80 object-contain"
+              className="w-full h-80 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
         </div>
@@ -40,10 +53,12 @@ const AboutSection = () => {
         <div id="artists" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Left */}
           <div>
-            <img
-              src="src/assets/artist.jpeg"
+            <motion.img
+              src="src/assets/artist.webp"
               alt="Artists"
-              className="w-full h-80 object-contain"
+              className="w-full h-80 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
           {/* Text Right */}
@@ -94,10 +109,12 @@ const AboutSection = () => {
           </div>
           {/* Image */}
           <div>
-            <img
-              src="src/assets/tickets.jpeg"
+            <motion.img
+              src="src/assets/tickets.webp"
               alt="Tickets"
-              className="w-full h-72 object-contain"
+              className="w-full h-72 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
         </div>
@@ -109,10 +126,12 @@ const AboutSection = () => {
         >
           {/* Image Left */}
           <div>
-            <img
-              src="src/assets/mela.jpeg"
+            <motion.img
+              src="src/assets/mela.webp"
               alt="Volunteer"
-              className="w-full h-80 object-contain"
+              className="w-full h-80 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
           {/* Text Right */}
@@ -159,10 +178,12 @@ const AboutSection = () => {
           </div>
           {/* Image */}
           <div>
-            <img
-              src="src/assets/music.jpeg"
+            <motion.img
+              src="src/assets/music.webp"
               alt="Music"
-              className="w-full h-92 object-contain"
+              className="w-full h-92 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
         </div>
@@ -186,10 +207,12 @@ const AboutSection = () => {
           </div>
           {/* Image */}
           <div>
-            <img
-              src="src/assets/about.jpeg"
+            <motion.img
+              src="src/assets/about.webp"
               alt="About"
-              className="w-full h-80 object-contain"
+              className="w-full h-80 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
           </div>
         </div>

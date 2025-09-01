@@ -84,8 +84,8 @@ const Footer = () => {
               <div className="space-y-4">
                 <div className="text-sm text-gray-300">
                   <p className="mb-2">📧 info@bazmfestival.com</p>
-                  <p className="mb-2">📞 +92 300 1234567</p>
-                  <p>📍 Cultural Center, Karachi</p>
+                  <p className="mb-2">📞 +47 1234 5678</p>
+                  <p>📍 Cultural Center, Norway</p>
                 </div>
                 
                 {/* Newsletter Signup */}
