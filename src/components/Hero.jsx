@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import bgImage from "../assets/herobackground.jpeg";
-import logo from "../assets/logo.png";
+import bgImage from "/herobackground.jpeg";
+import logo from "/logo.png";
 
 const HeroSection = () => {
   const headings = [

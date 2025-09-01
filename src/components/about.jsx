@@ -40,7 +40,7 @@ const AboutSection = () => {
           {/* Image */}
           <div>
             <motion.img
-              src="src/assets/program.webp"
+              src="/program.webp"
               alt="Program"
               className="w-full h-80 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
@@ -54,7 +54,7 @@ const AboutSection = () => {
           {/* Image Left */}
           <div>
             <motion.img
-              src="src/assets/artist.webp"
+              src="/artist.webp"
               alt="Artists"
               className="w-full h-80 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
@@ -110,7 +110,7 @@ const AboutSection = () => {
           {/* Image */}
           <div>
             <motion.img
-              src="src/assets/tickets.webp"
+              src="/tickets.webp"
               alt="Tickets"
               className="w-full h-72 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
@@ -127,7 +127,7 @@ const AboutSection = () => {
           {/* Image Left */}
           <div>
             <motion.img
-              src="src/assets/mela.webp"
+              src="/mela.webp"
               alt="Volunteer"
               className="w-full h-80 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
@@ -179,7 +179,7 @@ const AboutSection = () => {
           {/* Image */}
           <div>
             <motion.img
-              src="src/assets/music.webp"
+              src="/music.webp"
               alt="Music"
               className="w-full h-92 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
@@ -208,7 +208,7 @@ const AboutSection = () => {
           {/* Image */}
           <div>
             <motion.img
-              src="src/assets/about.webp"
+              src="/about.webp"
               alt="About"
               className="w-full h-80 object-contain rounded-xl"
               whileHover={{ scale: 1.1 }}
