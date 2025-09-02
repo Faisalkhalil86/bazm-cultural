@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20 max-w-[1920px] mx-auto scroll-smooth">
-      <div className="space-y-24">
+      <div className="space-y-8">
         {/* PROGRAM */}
         <div id="program" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text */}
@@ -20,10 +20,7 @@ const AboutSection = () => {
               man knytter bånd med mennesker som deler samme lidenskap for
               kultur og arv.
             </p>
-            <a
-              href="#program"
-              className="text-red-500 font-semibold hover:underline"
-            >
+            <a href="" className="text-red-500 font-semibold hover:underline">
               See program →
             </a>
           </div>
@@ -66,10 +63,7 @@ const AboutSection = () => {
               tradisjoner som knytter generasjoner og lokalsamfunn over hele
               verden.
             </p>
-            <a
-              href="#artists"
-              className="text-red-500 font-semibold hover:underline"
-            >
+            <a href="" className="text-red-500 font-semibold hover:underline">
               See artists →
             </a>
           </div>
@@ -90,10 +84,7 @@ const AboutSection = () => {
               mest etterlengtede programmene, og gir deg muligheten til å nyte
               tradisjoner, kreativitet og fellesskap på sitt beste.
             </p>
-            <a
-              href="#tickets"
-              className="text-red-500 font-semibold hover:underline"
-            >
+            <a href="" className="text-red-500 font-semibold hover:underline">
               Buy tickets →
             </a>
           </div>
@@ -136,10 +127,7 @@ const AboutSection = () => {
               bare et arrangement – det er en kulturell reise som knytter
               generasjoner sammen og viser frem mangfoldet i Sør-Asia.
             </p>
-            <a
-              href="#mela-festival"
-              className="text-red-500 font-semibold hover:underline"
-            >
+            <a href="" className="text-red-500 font-semibold hover:underline">
               Mela Festival →
             </a>
           </div>
@@ -159,10 +147,7 @@ const AboutSection = () => {
               Opplev melodier som knytter tradisjoner med innovasjon, og stemmer
               som gjenspeiler historier om arv og fellesskap.
             </p>
-            <a
-              href="#music"
-              className="text-red-500 font-semibold hover:underline"
-            >
+            <a href="" className="text-red-500 font-semibold hover:underline">
               Explore music →
             </a>
           </div>
@@ -180,8 +165,18 @@ const AboutSection = () => {
 
         {/* ABOUT */}
         <div id="about" className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-          <div className="space-y-4 order-1 md:order-1">
+          {/* Image Left */}
+          <div className="order-2 md:order-1">
+            <motion.img
+              src="/about.webp"
+              alt="About"
+              className="w-full h-80 object-contain rounded-xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+          {/* Text Right */}
+          <div className="space-y-4 order-1 md:order-2">
             <h2 className="text-3xl font-light">OM</h2>
             <p className="text-gray-300 text-justify">
               Bazm Cultural Festival fremmer sørasiatisk kultur i Bergen gjennom
@@ -194,16 +189,6 @@ const AboutSection = () => {
               kan verdsette rikdommen i sørasiatisk arv, samtidig som de
               omfavner enhet i mangfold.
             </p>
-          </div>
-          {/* Image */}
-          <div className="order-2 md:order-2">
-            <motion.img
-              src="/about.webp"
-              alt="About"
-              className="w-full h-80 object-contain rounded-xl"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-            />
           </div>
         </div>
       </div>
