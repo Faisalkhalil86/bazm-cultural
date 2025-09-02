@@ -1,25 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const fadeInUp = {
-  hidden: { opacity: 1, y: 0 },
-  visible: { opacity: 1, y: -10 },
-};
-
-const scaleIn = {
-  hidden: { opacity: 1, scale: 1 },
-  visible: { opacity: 1, scale: 1.05 },
-};
-
 const AboutSection = () => {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20 max-w-[1920px] mx-auto scroll-smooth">
-      <div className=" space-y-24">
+      <div className="space-y-24">
         {/* PROGRAM */}
         <div id="program" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">PROGRAM</h2>
+          <div className="space-y-4 order-1 md:order-1">
+            <h2 className="text-3xl font-light">PROGRAM</h2>
             <p className="text-gray-300 text-justify">
               Oppdag våre kommende arrangementer, kulturelle samlinger og
               verksteder som viser frem den rike arven fra Sør-Asia. Fra livlige
@@ -38,7 +28,7 @@ const AboutSection = () => {
             </a>
           </div>
           {/* Image */}
-          <div>
+          <div className="order-2 md:order-2">
             <motion.img
               src="/program.webp"
               alt="Program"
@@ -52,7 +42,7 @@ const AboutSection = () => {
         {/* ARTISTS */}
         <div id="artists" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Left */}
-          <div>
+          <div className="order-2 md:order-1">
             <motion.img
               src="/artist.webp"
               alt="Artists"
@@ -62,8 +52,8 @@ const AboutSection = () => {
             />
           </div>
           {/* Text Right */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">ARTISTER</h2>
+          <div className="space-y-4 order-1 md:order-2">
+            <h2 className="text-3xl font-light">ARTISTER</h2>
             <p className="text-gray-300 text-justify">
               Utforsk tradisjonelle og moderne forestillinger fra talentfulle
               lokale og internasjonale artister. Opplev skjønnheten i fusjon når
@@ -88,8 +78,8 @@ const AboutSection = () => {
         {/* TICKETS */}
         <div id="tickets" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">BILLETTER</h2>
+          <div className="space-y-4 order-1 md:order-1">
+            <h2 className="text-3xl font-light">BILLETTER</h2>
             <p className="text-gray-300 text-justify">
               Kjøp billetter til våre festivaler og kulturarrangementer med
               letthet. Sikre deg en plass på forhånd og bli en del av en
@@ -108,7 +98,7 @@ const AboutSection = () => {
             </a>
           </div>
           {/* Image */}
-          <div>
+          <div className="order-2 md:order-2">
             <motion.img
               src="/tickets.webp"
               alt="Tickets"
@@ -125,7 +115,7 @@ const AboutSection = () => {
           className="grid md:grid-cols-2 gap-12 items-center"
         >
           {/* Image Left */}
-          <div>
+          <div className="order-2 md:order-1">
             <motion.img
               src="/mela.webp"
               alt="Volunteer"
@@ -135,8 +125,8 @@ const AboutSection = () => {
             />
           </div>
           {/* Text Right */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">MELA FESTIVAL</h2>
+          <div className="space-y-4 order-1 md:order-2">
+            <h2 className="text-3xl font-light">MELA FESTIVAL</h2>
             <p className="text-gray-300 text-justify">
               Mela-festivalen er en livlig feiring av sørasiatisk kultur som
               samler mennesker fra alle bakgrunner for å oppleve rikdommen av
@@ -158,8 +148,8 @@ const AboutSection = () => {
         {/* MUSIC */}
         <div id="music" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">MUSIKK</h2>
+          <div className="space-y-4 order-1 md:order-1">
+            <h2 className="text-3xl font-light">MUSIKK</h2>
             <p className="text-gray-300 text-justify">
               Musikk ligger i hjertet av våre kulturelle feiringer. Fra
               klassiske ragas og religiøse sanger til energiske folkeslag og
@@ -177,7 +167,7 @@ const AboutSection = () => {
             </a>
           </div>
           {/* Image */}
-          <div>
+          <div className="order-2 md:order-2">
             <motion.img
               src="/music.webp"
               alt="Music"
@@ -191,8 +181,8 @@ const AboutSection = () => {
         {/* ABOUT */}
         <div id="about" className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">OM</h2>
+          <div className="space-y-4 order-1 md:order-1">
+            <h2 className="text-3xl font-light">OM</h2>
             <p className="text-gray-300 text-justify">
               Bazm Cultural Festival fremmer sørasiatisk kultur i Bergen gjennom
               tradisjoner, verdier og fellesskapsaktiviteter. Vårt oppdrag er å
@@ -206,7 +196,7 @@ const AboutSection = () => {
             </p>
           </div>
           {/* Image */}
-          <div>
+          <div className="order-2 md:order-2">
             <motion.img
               src="/about.webp"
               alt="About"
@@ -220,4 +210,5 @@ const AboutSection = () => {
     </section>
   );
 };
+
 export default AboutSection;

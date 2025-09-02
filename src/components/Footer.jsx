@@ -31,11 +31,12 @@ const Footer = () => {
                   <p className="text-sm text-gray-300">Cultural Festival</p>
                 </div>
               </div>
+
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 Celebrating diverse cultures and bringing communities together
                 through art, music, and traditions from around the world.
               </p>
-              
+
               {/* Social Media Icons */}
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
@@ -87,7 +88,7 @@ const Footer = () => {
                   <p className="mb-2">📞 +47 1234 5678</p>
                   <p>📍 Cultural Center, Norway</p>
                 </div>
-                
+
                 {/* Newsletter Signup */}
                 <div className="mt-6">
                   <h5 className="text-sm font-semibold mb-3 text-white">Newsletter</h5>
@@ -104,6 +105,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -113,7 +115,7 @@ const Footer = () => {
             <div className="text-gray-400 text-sm text-center md:text-left">
               <p>&copy; 2025 Bazm Cultural Festival. All rights reserved.</p>
             </div>
-            
+
             <div className="flex gap-6 text-xs text-gray-400">
               <span className="hover:text-orange-400 transition-colors duration-300 cursor-pointer">Privacy Policy</span>
               <span className="hover:text-orange-400 transition-colors duration-300 cursor-pointer">Terms of Service</span>

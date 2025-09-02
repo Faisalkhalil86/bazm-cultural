@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "/logo.png";
+import logo from "/bazmlogo.jpeg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,20 +8,28 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // English + Norwegian labels
+  const navLinks = [
+    { href: "#program", en: "PROGRAM", no: "PROGRAM" },
+    { href: "#artists", en: "ARTISTS", no: "KUNSTNERE" },
+    { href: "#tickets", en: "TICKETS", no: "BILLETTER" },
+    { href: "#mela-festival", en: "MELA FESTIVAL", no: "MELA FESTIVAL" },
+    { href: "#about", en: "ABOUT", no: "OM OSS" },
+  ];
+
   return (
-    <nav className="absolute top-0 left-0 w-full flex items-center justify-between px-4 sm:px-10 py-4 text-white font-semibold z-10">
+    <nav className="absolute left-0 w-full flex items-center justify-between px-4 sm:px-10 py-3 text-white font-semibold z-50">
       {/* Logo */}
       <div className="flex items-center gap-4">
         <img
           src={logo}
           alt="Bazm Logo"
-          width={120}
-          height={80}
-          className="rounded-full object-contain"
+          className="rounded-full object-contain 
+                     w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-26 xl:h-26 2xl:w-36 2xl:h-36"
         />
       </div>
 
-      {/* Toggle Button for Mobile */}
+      {/* Mobile Toggle */}
       <button
         className="md:hidden text-white focus:outline-none"
         onClick={toggleMenu}
@@ -45,45 +53,25 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div
-        className={`fixed md:static top-16 right-0 w-3/5 md:w-auto bg-black/80 md:bg-transparent p-4 md:p-0 flex flex-col md:flex-row gap-4 md:gap-8 text-sm md:text-base transform transition-transform duration-300 ease-in-out ${
+        className={`fixed md:static right-0 w-3/5 md:w-auto bg-black/80 md:bg-transparent p-4 md:p-0 flex flex-col md:flex-row gap-4 md:gap-8 text-sm md:text-base transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:translate-x-0 md:flex`}
       >
-        <a
-          href="#program"
-          className="hover:text-orange-400 transition"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          PROGRAM
-        </a>
-        <a
-          href="#artists"
-          className="hover:text-orange-400 transition"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          ARTISTS
-        </a>
-        <a
-          href="#tickets"
-          className="hover:text-orange-400 transition"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          TICKETS
-        </a>
-        <a
-          href="#mela-festival"
-          className="hover:text-orange-400 transition"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          MELA FESTIVAL
-        </a>
-        <a
-          href="#about"
-          className="hover:text-orange-400 transition"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          ABOUT
-        </a>
+        {navLinks.map((link, idx) => (
+          <a
+            key={idx}
+            href={link.href}
+            data-en={link.en}
+            data-no={link.no}
+            onClick={() => setIsMenuOpen(false)}
+            className="relative transition hover:text-orange-400 
+                       after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                       after:w-0 hover:after:w-full after:h-[2px] 
+                       after:bg-gradient-to-r after:from-orange-400 after:to-blue-400 
+                       after:transition-all after:duration-300
+                       before:content-[attr(data-en)] before:block hover:before:content-[attr(data-no)]"
+          ></a>
+        ))}
       </div>
     </nav>
   );
