@@ -139,27 +139,28 @@ const Footer = () => {
                 </div>
 
                 {/* Newsletter Signup */}
-             <div className="mt-6">
-  <h5 className="text-sm font-semibold mb-3 text-white">Newsletter</h5>
-  <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
-    <input
-      type="email"
-      placeholder="Your email"
-      className="w-full sm:flex-1 max-w-[250px] sm:max-w-none px-3 sm:px-4 py-2 
+                <div className="mt-6">
+                  <h5 className="text-sm font-semibold mb-3 text-white">
+                    Newsletter
+                  </h5>
+                  <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                      className="w-full sm:flex-1 max-w-[250px] sm:max-w-none px-3 sm:px-4 py-2 
                  bg-gray-800 border border-gray-700 rounded-lg 
                  text-xs sm:text-sm text-white focus:outline-none focus:border-orange-400 
                  transition-colors duration-300"
-    />
-    <button
-      className="w-full sm:w-auto max-w-[250px] sm:max-w-none px-3 sm:px-6 py-2 
+                    />
+                    <button
+                      className="w-full sm:w-auto max-w-[250px] sm:max-w-none px-3 sm:px-6 py-2 
                  bg-orange-400 hover:bg-orange-500 text-black font-semibold rounded-lg 
                  transition-colors duration-300 text-xs sm:text-sm"
-    >
-      Subscribe
-    </button>
-  </div>
-</div>
-
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
