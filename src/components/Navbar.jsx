@@ -15,7 +15,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Bazm Logo"
-          width={80}
+          width={120}
           height={80}
           className="rounded-full object-contain"
         />
