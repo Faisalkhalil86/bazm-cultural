@@ -1,6 +1,14 @@
 import React from "react";
 import logo from "/logo.png";
-import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaTiktok,
+  FaWhatsapp,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -132,10 +140,29 @@ const Footer = () => {
                 Stay Connected
               </h4>
               <div className="space-y-4">
-                <div className="text-sm text-gray-300">
-                  <p className="mb-2">📧 info@bazmfestival.com</p>
-                  <p className="mb-2">📞 +47 1234 5678</p>
-                  <p>📍 Cultural Center, Norway</p>
+                <div className="text-sm text-gray-300 space-y-2">
+                  {/* 📧 Email */}
+                  <p className="flex items-center gap-2">
+                    <FaEnvelope className="text-orange-400 w-4 h-4" />
+                    info@bazmfestival.com
+                  </p>
+
+                  {/* ✅ WhatsApp Group */}
+                  <a
+                    href="https://chat.whatsapp.com/JcOGaq5zrTN97FSlEGdVFG?mode=ems_wa_c" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-green-400 hover:text-orange-400 transition-colors duration-300 font-semibold cursor-pointer"
+                  >
+                    <FaWhatsapp className="w-5 h-5" />
+                    Join our WhatsApp Group
+                  </a>
+
+                  {/* 📍 Location */}
+                  <p className="flex items-center gap-2">
+                    <FaMapMarkerAlt className="text-orange-400 w-4 h-4" />
+                    Cultural Center, Norway
+                  </p>
                 </div>
 
                 {/* Newsletter Signup */}
