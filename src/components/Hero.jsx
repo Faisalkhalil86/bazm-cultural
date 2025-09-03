@@ -5,9 +5,8 @@ import Navbar from "./Navbar";
 const Hero = () => {
   const headings = [
     { main: "BAZM CULTURAL", sub: "FESTIVAL" },
-    { main: "BAZM KULTURELL", sub: "FESTIVAL" },
+    { main: "BAZM Kultur", sub: "Festivaler" },
     { main: "بازم ثقافتی", sub: "تقریب" },
-    { main: "BAZM KULTURELT", sub: "FESTIVAL" },
     { main: "बज़्म सांस्कृतिक", sub: "उत्सव" },
   ];
 
