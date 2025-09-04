@@ -3,7 +3,6 @@ import logo from "/logo.png";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaTiktok,
   FaWhatsapp,
   FaEnvelope,
@@ -13,17 +12,16 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-black max-w-[1920px] mx-auto text-white relative overflow-hidden">
-      {/* Dekorativt bakgrunnsmønster */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-64 h-64 bg-orange-400 rounded-full blur-3xl transform -translate-x-32 -translate-y-32"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-400 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
       </div>
 
       <div className="relative z-10 max-w-[1920px] mx-auto">
-        {/* Hovedinnhold i footer */}
+      
         <div className="px-6 md:px-10 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Merkevareseksjon */}
+     
             <div className="lg:col-span-1">
               <div className="flex items-center gap-4 mb-6">
                 <img
@@ -46,22 +44,34 @@ const Footer = () => {
 
               {/* Sosiale medier ikoner */}
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61580166548194"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
                   <FaFacebookF className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
+                </a>
+                <a
+                  href="https://www.instagram.com/kulturfestivaler/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
                   <FaInstagram className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
-                  <FaTwitter className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
+                </a>
+                <a
+                  href="https://www.tiktok.com/@bazmmelabergen?_t=ZS-8zRyuhgr95U&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
                   <FaTiktok className="w-5 h-5" />
-                </div>
+                </a>
               </div>
             </div>
 
-            {/* Hurtiglenker */}
+    
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
                 Hurtiglenker
@@ -95,7 +105,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Festivalinformasjon */}
+          
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
                 Festivalinformasjon
@@ -134,7 +144,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Kontakt & Nyhetsbrev */}
+          
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
                 Hold deg oppdatert
