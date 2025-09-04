@@ -64,7 +64,7 @@ const AboutSection = () => {
               verden.
             </p>
             <a href="" className="text-red-500 font-semibold hover:underline">
-              See artists →
+              See Artister →
             </a>
           </div>
         </div>
@@ -85,7 +85,7 @@ const AboutSection = () => {
               tradisjoner, kreativitet og fellesskap på sitt beste.
             </p>
             <a href="" className="text-red-500 font-semibold hover:underline">
-              Buy tickets →
+              Buy BILLETTER →
             </a>
           </div>
           {/* Image */}
@@ -148,7 +148,7 @@ const AboutSection = () => {
               som gjenspeiler historier om arv og fellesskap.
             </p>
             <a href="" className="text-red-500 font-semibold hover:underline">
-              Explore music →
+              Explore Musikk →
             </a>
           </div>
           {/* Image */}

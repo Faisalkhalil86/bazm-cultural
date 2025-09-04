@@ -74,15 +74,14 @@ const Navbar = () => {
           <button
             key={idx}
             onClick={() => handleScroll(link.id)}
-            data-en={link.en}
-            data-no={link.no}
             className="relative bg-transparent border-none text-white cursor-pointer transition hover:text-orange-400 
                        after:content-[''] after:absolute after:left-0 after:-bottom-1 
                        after:w-0 hover:after:w-full after:h-[2px] 
                        after:bg-gradient-to-r after:from-orange-400 after:to-blue-400 
-                       after:transition-all after:duration-300
-                       before:content-[attr(data-no)] before:block hover:before:content-[attr(data-en)]"
-          />
+                       after:transition-all after:duration-300"
+          >
+            {link.no}
+          </button>
         ))}
       </div>
     </nav>

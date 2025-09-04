@@ -4,10 +4,7 @@ import Navbar from "./Navbar";
 
 const Hero = () => {
   const headings = [
-    { main: "BAZM CULTURAL", sub: "FESTIVAL" },
-    { main: "BAZM Kultur", sub: "Festivaler" },
-    { main: "بازم ثقافتی", sub: "تقریب" },
-    { main: "बज़्म सांस्कृतिक", sub: "उत्सव" },
+    { main: "BAZM Kultur", sub: "Festivaler" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,7 +33,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg transition-all duration-700 ease-in-out">
           {headings[currentIndex].main} <br />
-          <span className="text-4xl md:text-7xl font-bold text-orange-500">
+          <span className="text-4xl md:text-7xl font-bold text-blue-40">
             {headings[currentIndex].sub}
           </span>
         </h1>

@@ -13,17 +13,17 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-black max-w-[1920px] mx-auto text-white relative overflow-hidden">
-      {/* Decorative Background Pattern */}
+      {/* Dekorativt bakgrunnsmønster */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-64 h-64 bg-orange-400 rounded-full blur-3xl transform -translate-x-32 -translate-y-32"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-400 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
       </div>
 
       <div className="relative z-10 max-w-[1920px] mx-auto">
-        {/* Main Footer Content */}
+        {/* Hovedinnhold i footer */}
         <div className="px-6 md:px-10 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Brand Section */}
+            {/* Merkevareseksjon */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-4 mb-6">
                 <img
@@ -35,16 +35,16 @@ const Footer = () => {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-orange-400">BAZM</h3>
-                  <p className="text-sm text-gray-300">Cultural Festival</p>
+                  <p className="text-sm text-gray-300">Kulturfestival</p>
                 </div>
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                Celebrating diverse cultures and bringing communities together
-                through art, music, and traditions from around the world.
+                Vi feirer mangfoldige kulturer og bringer lokalsamfunn sammen
+                gjennom kunst, musikk og tradisjoner fra hele verden.
               </p>
 
-              {/* Social Media Icons */}
+              {/* Sosiale medier ikoner */}
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-gray-800 hover:bg-orange-400 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer">
                   <FaFacebookF className="w-5 h-5" />
@@ -61,10 +61,10 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
+            {/* Hurtiglenker */}
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
-                Quick Links
+                Hurtiglenker
               </h4>
               <ul className="space-y-3">
                 <li>
@@ -74,12 +74,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    ARTISTS
+                    ARTISTER
                   </span>
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    TICKETS
+                    BILLETTER
                   </span>
                 </li>
                 <li>
@@ -89,41 +89,41 @@ const Footer = () => {
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    ABOUT
+                    OM OSS
                   </span>
                 </li>
               </ul>
             </div>
 
-            {/* Festival Info */}
+            {/* Festivalinformasjon */}
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
-                Festival Info
+                Festivalinformasjon
               </h4>
               <ul className="space-y-3">
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    Venue & Location
+                    Sted & Lokasjon
                   </span>
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    Food & Drinks
+                    Mat & Drikke
                   </span>
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    Cultural Workshops
+                    Kulturelle Verksteder
                   </span>
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    Our Sponsors
+                    Våre Sponsorer
                   </span>
                 </li>
                 <li>
                   <span className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-sm cursor-pointer">
-                    Volunteer
+                    Frivillig
                   </span>
                 </li>
                 <li>
@@ -134,46 +134,49 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact & Newsletter */}
+            {/* Kontakt & Nyhetsbrev */}
             <div>
               <h4 className="text-lg font-semibold text-orange-400 mb-6">
-                Stay Connected
+                Hold deg oppdatert
               </h4>
               <div className="space-y-4">
                 <div className="text-sm text-gray-300 space-y-2">
-                  {/* 📧 Email */}
-                  <p className="flex items-center gap-2">
-                    <FaEnvelope className="text-orange-400 w-4 h-4" />
-                    info@bazmfestival.com
-                  </p>
-
-                  {/* ✅ WhatsApp Group */}
+                  {/* 📧 E-post */}
                   <a
-                    href="https://chat.whatsapp.com/JcOGaq5zrTN97FSlEGdVFG?mode=ems_wa_c" 
+                    href="mailto:info@bazmfestival.com"
+                    className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-300"
+                  >
+                    <FaEnvelope className="text-orange-400 w-4 h-4" />
+                    Bazmkulturfestivaler@gmail.com
+                  </a>
+
+                  {/* ✅ WhatsApp Gruppe */}
+                  <a
+                    href="https://chat.whatsapp.com/JcOGaq5zrTN97FSlEGdVFG?mode=ems_wa_c"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-green-400 hover:text-orange-400 transition-colors duration-300 font-semibold cursor-pointer"
                   >
                     <FaWhatsapp className="w-5 h-5" />
-                    Join our WhatsApp Group
+                    Bli med i vår WhatsApp-gruppe
                   </a>
 
-                  {/* 📍 Location */}
+                  {/* 📍 Lokasjon */}
                   <p className="flex items-center gap-2">
                     <FaMapMarkerAlt className="text-orange-400 w-4 h-4" />
-                    Cultural Center, Norway
+                    Norwegian
                   </p>
                 </div>
 
-                {/* Newsletter Signup */}
+                {/* Nyhetsbrev */}
                 <div className="mt-6">
                   <h5 className="text-sm font-semibold mb-3 text-white">
-                    Newsletter
+                    Nyhetsbrev
                   </h5>
                   <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
                     <input
                       type="email"
-                      placeholder="Your email"
+                      placeholder="Din e-post"
                       className="w-full sm:flex-1 max-w-[250px] sm:max-w-none px-3 sm:px-4 py-2 
                  bg-gray-800 border border-gray-700 rounded-lg 
                  text-xs sm:text-sm text-white focus:outline-none focus:border-orange-400 
@@ -184,7 +187,7 @@ const Footer = () => {
                  bg-orange-400 hover:bg-orange-500 text-black font-semibold rounded-lg 
                  transition-colors duration-300 text-xs sm:text-sm"
                     >
-                      Subscribe
+                      Abonner
                     </button>
                   </div>
                 </div>
@@ -193,22 +196,22 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bunntekst */}
         <div className="border-t border-gray-800 px-6 md:px-10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              <p>&copy; 2025 Bazm Cultural Festival. All rights reserved.</p>
+              <p>&copy; 2025 Bazm Kulturfestival. Alle rettigheter reservert.</p>
             </div>
 
             <div className="flex gap-6 text-xs text-gray-400">
               <span className="hover:text-orange-400 transition-colors duration-300 cursor-pointer">
-                Privacy Policy
+                Personvernpolicy
               </span>
               <span className="hover:text-orange-400 transition-colors duration-300 cursor-pointer">
-                Terms of Service
+                Vilkår for bruk
               </span>
               <span className="hover:text-orange-400 transition-colors duration-300 cursor-pointer">
-                Cookie Policy
+                Retningslinjer for informasjonskapsler
               </span>
             </div>
           </div>
