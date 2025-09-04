@@ -64,7 +64,7 @@ const AboutSection = () => {
               verden.
             </p>
             <a href="" className="text-red-500 font-semibold hover:underline">
-              See Artister →
+              Se Artister →
             </a>
           </div>
         </div>
@@ -75,7 +75,7 @@ const AboutSection = () => {
           <div className="space-y-4 order-1 md:order-1">
             <h2 className="text-3xl font-light">BILLETTER</h2>
             <p className="text-gray-300 text-justify">
-              Kjøp billetter til våre festivaler og kulturarrangementer med
+             Kjøpe billetter til våre festivaler og kulturarrangementer med
               letthet. Sikre deg en plass på forhånd og bli en del av en
               uforglemmelig kulturell reise. Enten det er livlige
               danseopptredener, sjelfulle konserter, fortellerkvelder eller

@@ -174,7 +174,7 @@ const Footer = () => {
                   {/* 📍 Lokasjon */}
                   <p className="flex items-center gap-2">
                     <FaMapMarkerAlt className="text-orange-400 w-4 h-4" />
-                    Norwegian
+                    Bergen
                   </p>
                 </div>
 
